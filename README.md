@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+Technical test - Mars Rover
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Context
+We are sending a Rover to Mars, and we need to be able to move it through a series of instructions
+sent from the Earth. In order to follow it, we need an interface to see the Rover’s journey in real
+time.
+You are the chosen one to lead this fantastic project. But please be careful, NASA pays particular
+attention to the best practices and tested code!
+For the moment, our Rover is on a test mission. NASA has placed the Rover on a grid as playground
+to make sure all is well before we ship it off to Mars.
+What needs to be set as constants in the app entry:
+- The grid’s size
+- The Rover’s default direction
+- The Rover’s default position
+- The list of commands
 
-## Available Scripts
+The grid
+The grid is a 10x10 square.
 
-In the project directory, you can run:
+The rover
+Our Mars Rover’s default direction is “N” (as North). Its direction is one of four values: “N”, “S”, “E”
+or “W”.
+Example: If the Rover is facing North and turns left, it is now facing West.
+To move the Rover around, we have to keep track of its position. Positions are represented as a pair
+of coordinates: ”x” and ”y”. Their default values are both 0.
+The Rover can't move and turn at the same time. This means that if the Rover wants to move to the
+left, its first move must be a turn. Its next move will then be a step forward.
 
-### `npm start`
+The Commands
+The commands are the first letter of either (f)orward, (r)ight, or (l)eft.
+To test it, you can use the string ‘rfflfflfrff’
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Your mission
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+NASA waits for you to deliver a React application with the testing grid and the Rover moving in real-
+time. You can choose the libraries you need and define the UX/UI you want, in you we trust!
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can send us a zip project or a Github link by email.
+Good luck!
